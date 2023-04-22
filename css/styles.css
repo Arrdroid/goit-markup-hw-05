@@ -180,6 +180,7 @@ display: inline-block;
 border-radius: 2px;}
 
 .header-item.current::after {background-color: var(--forth-color);}
+.header-item.current {color: var(--forth-color);}
 
 .address {font-style: normal;}
 .address-item {color:var(--second-color);
@@ -542,11 +543,14 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
 
 
 
-.modal-btn {display: flex;
+.modal-btn {position: absolute;
+top: 24px;
+right: 24px;
+
+display: flex;
 justify-content: center;
 align-items: center;
-margin-left: auto;
-margin-bottom: 24px;
+
 width: 24px;
 height: 24px;
 border-radius: 50%;
